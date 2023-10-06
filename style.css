@@ -6,7 +6,7 @@
 .banner{
     width:100%;
     height:100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(miffy.jpg);
+    background-image: linear-gradient(rgba(254, 253, 253, 0.75), rgba(245, 240, 240, 0.75)), url(miffy.jpg);
     background-size: cover;
     background-position:center;
 }
@@ -39,7 +39,7 @@
     content: '';
     height: 3px;
     width: 0%;
-    background: #009688;
+    background: #498247;
     position: absolute;
     left: 0;
     bottom: -10px;
