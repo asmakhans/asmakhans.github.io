@@ -54,23 +54,34 @@
 }
 
 .links a{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 2px solid #498247;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #498247;
-    font-size: 22px;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    width: 68px;
+    height: 68px;
+    font-size: 26px;
+    border-width: 2.5px;
 }
 .links a:hover{
     background: #498247;
     color: white;
     transform: translateY(-4px);
 }
+.links a {
+    position: relative;
+}
+
+.links a::after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -30px;
+    font-size: 12px;
+    color: #2b0000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.links a:hover::after {
+    opacity: 1;
+}
+
 @media (max-width: 768px){
     .content h1{
         font-size: 48px;
@@ -87,11 +98,11 @@
     }
 }
 .image-card {
-    margin: 35px auto 0;
-    width: 260px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    background: white;
+    padding: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
 }
 
 .image-card img {
