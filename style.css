@@ -109,7 +109,7 @@
 .image-card {
     background: white;
     padding: 6px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
     border-radius: 18px;
     margin: 35px auto 0;
     width: 260px;
@@ -119,6 +119,7 @@
     width: 100%;
     display: block;
     border-radius: 14px;
+    filter: contrast(0.95) saturate(0.95);
 }
 
 
